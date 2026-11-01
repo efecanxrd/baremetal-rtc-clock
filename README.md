@@ -22,9 +22,9 @@ Includes embedded driver files, a custom C startup file (`stm32_startup.c`), lin
 * **RTC Module:** DS1307 (I2C)
 * **Display:** 16x2 LCD + PCF8574 I2C adapter
 
-### Pinout (I2C2)
+### Pinout 
 
-| Line | STM32F4 Pin | Notes |
+| Line | Pin | Notes |
 | :--- | :--- | :--- |
 | **I2C1_SCL** | `PB6` | Open-Drain, internal Pull-Up |
 | **I2C1_SDA** | `PB7` | Open-Drain, internal Pull-Up |
