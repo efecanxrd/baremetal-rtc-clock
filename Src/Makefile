@@ -2,8 +2,6 @@ CC = arm-none-eabi-gcc
 MACH = cortex-m4
 CFLAGS = -c -mcpu=$(MACH) -mthumb -std=gnu11 -Wall -O0 -g -I. -I../Inc -I../drivers/inc
 
-# -nostartfiles: Kendi stm32_startup.o dosyamizi kullanir, crt0.o baglanmaz
-# --specs=nosys.specs: _write, _read, _sbrk gibi sistem cagrilarini stub'lar
 LDFLAGS = -mcpu=$(MACH) -mthumb -nostartfiles --specs=nano.specs --specs=nosys.specs -T stm32_ls.ld -Wl,-Map=final.map -lc -lm
 
 OBJS = main.o \
