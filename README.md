@@ -13,7 +13,7 @@ Includes embedded driver files, a custom C startup file (`stm32_startup.c`), lin
 * **16x2 I2C LCD Driver:** HD44780 instruction set handling via PCF8574 I2C I/O expander.
 * **SysTick Interrupt:** Periodic display updates driven by SysTick timer interrupts.
 * **Custom Build Pipeline:** Replaced ST's default assembly startup with a minimal C startup and custom linker script.
-
+* **Hardware Assembly:** Hand-soldered PCF8574 I2C backpack onto the 16x2 LCD display.
 
 
 ## Hardware Setup
