@@ -1,14 +1,14 @@
-# STM32 Discovery Bare-Metal RTC Clock & I2C LCD Driver
+# STM32 Bare-Metal RTC Clock & I2C LCD Driver
 
 A bare-metal C implementation of a DS1307 RTC and an I2C 1602 LCD driver running on the **STM32F407 Discovery (`STM32F407G-DISC1`)** board. Developed strictly at the register level without using HAL, Standard Peripheral Libraries, or ST's auto-generated code.
 
-Includes a custom C startup file (`stm32_startup.c`), linker script (`stm32_ls.ld`), and GNU Toolchain `Makefile` written from scratch.
+Includes embedded driver files, a custom C startup file (`stm32_startup.c`), linker script (`stm32_ls.ld`), and GNU Toolchain `Makefile` written from scratch.
 
 ---
 
 ## Features
 
-* **Register-Level Drivers:** Bare-metal GPIO and I2C2 driver implementation from scratch.
+* **Register-Level Drivers:** Bare-metal GPIO and I2C driver implementation from scratch.
 * **DS1307 RTC Integration:** BCD conversions, time/date reading and writing.
 * **16x2 I2C LCD Driver:** HD44780 instruction set handling via PCF8574 I2C I/O expander.
 * **SysTick Interrupt:** Periodic display updates driven by SysTick timer interrupts.
@@ -64,3 +64,6 @@ Or run directly in a single commad (without GDB):
 ```bash
 openocd -f board/stm32f4discovery.cfg -c "program final.elf verify reset exit"
 ```
+
+<video src="https://github.com/user-attachments/assets/1d9e7a64-ba3e-4564-9437-e235a0d3ecd0" autoplay loop muted playsinline width="50%">
+</video>
