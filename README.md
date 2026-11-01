@@ -4,7 +4,7 @@ A bare-metal C implementation of a DS1307 RTC and an I2C 1602 LCD driver running
 
 Includes embedded driver files, a custom C startup file (`stm32_startup.c`), linker script (`stm32_ls.ld`), and GNU Toolchain `Makefile` written from scratch.
 
----
+
 
 ## Features
 
@@ -14,7 +14,7 @@ Includes embedded driver files, a custom C startup file (`stm32_startup.c`), lin
 * **SysTick Interrupt:** Periodic display updates driven by SysTick timer interrupts.
 * **Custom Build Pipeline:** Replaced ST's default assembly startup with a minimal C startup and custom linker script.
 
----
+
 
 ## Hardware Setup
 
@@ -31,7 +31,7 @@ Includes embedded driver files, a custom C startup file (`stm32_startup.c`), lin
 | **I2C2_SCL** | `PB10` | Open-Drain, internal Pull-Up |
 | **I2C2_SDA** | `PB11` | Open-Drain, internal Pull-Up |
 
----
+
 
 ## Building & Flashing
 
@@ -64,6 +64,8 @@ Or run directly in a single commad (without GDB):
 ```bash
 openocd -f board/stm32f4discovery.cfg -c "program final.elf verify reset exit"
 ```
+
+<br>
 
 <video src="https://github.com/user-attachments/assets/1d9e7a64-ba3e-4564-9437-e235a0d3ecd0" autoplay loop muted playsinline width="50%">
 </video>
