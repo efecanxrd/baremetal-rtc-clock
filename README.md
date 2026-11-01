@@ -18,7 +18,7 @@ Includes embedded driver files, a custom C startup file (`stm32_startup.c`), lin
 
 ## Hardware Setup
 
-* **MCU:** STM32F407VGT6 (STM32F4 Discovery Board)
+* **MCU:** STM32F407VG (STM32F4 Discovery Board)
 * **RTC Module:** DS1307 (I2C)
 * **Display:** 16x2 LCD + PCF8574 I2C adapter
 
