@@ -178,6 +178,7 @@ int main(void) {
     current_time.seconds = (uint8_t)t.tm_sec;
 
     // These two lines can be disabled if not needed
+	// Recommendation: Comment out these lines after first run
     ds1307_set_current_date(&current_date);
     ds1307_set_current_time(&current_time);
 
